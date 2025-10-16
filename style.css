@@ -1,0 +1,94 @@
+ul li{
+    float : right;
+    list-style-type: none;
+}
+
+li{
+    border-radius: 10px;
+    margin-right: 1%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+li:hover{
+    background-color: #44444E;
+}
+
+ul{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    right: 10px;
+    padding-right: 25px;
+    border-radius: 10px; /*'https://www.w3schools.com/css/css3_borders.asp'*/
+    overflow: hidden;
+    background-color: #37353E;
+}
+
+.nodec{
+    text-decoration: none;
+    text-align: center;
+    color: #D3DAD9;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #D3DAD9;
+}
+
+.contentDiv{
+    display: grid;
+    text-align: center;
+    width: 50%;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #D3DAD9
+}
+
+#IndexBody{
+    background-image: url("./Images/Backgorund.jpg");
+    background-repeat: no-repeat; /* https://www.w3schools.com/cssref/pr_background-repeat.php */
+    background-position-y: -600px;
+}
+
+footer{
+    background-color: #37353E;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#footerContent{
+    color: #D3DAD9;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+a:link{
+    color: #D3DAD9;
+}
+a:visited{
+    color: #D3DAD9;
+}
+a:active{
+    color: #D3DAD9;
+}
+#footerContent > a:hover{
+    font-weight: bold;
+}
+
+/*https://stackoverflow.com/questions/17756649/disable-the-horizontal-scroll*/
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
