@@ -1,20 +1,22 @@
-ul li{
-    float : right;
+/*desktop*/
+
+nav > ul li {
+    float: right;
     list-style-type: none;
 }
 
-li{
+nav > ul > li {
     border-radius: 10px;
     margin-right: 1%;
     padding-left: 10px;
     padding-right: 10px;
 }
 
-li:hover{
+nav > ul > li:hover {
     background-color: #44444E;
 }
 
-ul{
+nav > ul {
     position: absolute;
     top: 0;
     left: 15px;
@@ -25,40 +27,40 @@ ul{
     background-color: #37353E;
 }
 
-.nodec{
+.nodec {
     text-decoration: none;
     text-align: center;
     color: #D3DAD9;
 }
 
-div{
+div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-p{
+p {
     font-family: Arial, Helvetica, sans-serif;
     color: #D3DAD9;
 }
 
-.contentDiv{
-    display: grid;
+.contentDiv {
+    display: block;
     text-align: center;
-    width: 50%;
+    max-width: 50%;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
-    color: #D3DAD9
+    color: #D3DAD9;
 }
 
-#IndexBody{
-    background-image: url("./Images/bg.jpg");
+#Body {
+    background-image: url("images/bg.jpg");
     background-repeat: no-repeat; /* https://www.w3schools.com/cssref/pr_background-repeat.php */
     background-size: 1920px, 1080px;
     background-position-y: 0;
 }
 
-footer{
+footer {
     background-color: #37353E;
     position: absolute;
     bottom: 0;
@@ -66,30 +68,89 @@ footer{
     width: 100%;
     justify-content: center;
     align-items: center;
-    display: flex;
+    display: none;
 }
 
-#footerContent{
+#footerContent {
     color: #D3DAD9;
     font-size: 10px;
     text-decoration: none;
 }
 
-a:link{
+a:link {
     color: #D3DAD9;
 }
-a:visited{
+
+a:visited {
     color: #D3DAD9;
 }
-a:active{
+
+a:active {
     color: #D3DAD9;
 }
-#footerContent > a:hover{
+
+#footerContent > a:hover {
     font-weight: bold;
+}
+
+#AboutMain > div > .contentDiv {
+    font-size: 15px;
+    display: inline-flex;
+}
+
+#AboutMain > div > .contentDiv > ul {
+    list-style-type: none;
+    text-align: start;
+
+}
+#AboutMain > div > .contentDiv > ul > ul {
+    list-style-type: none;
+
+}
+#AboutMain > div > .contentDiv > ul > ul > li > p {
+    font-size: 20px;
+}
+
+#AboutMain > div{
+    justify-content: start;
+}
+
+
+#CV{
+    background-color: white;
+    color: black;
+    justify-content: center;
+    align-items: center;
+
 }
 
 /*https://stackoverflow.com/questions/17756649/disable-the-horizontal-scroll*/
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+}
+
+
+/*tablet*/
+@media screen and (max-width: 810px) {
+    .contentDiv{
+        max-height: 50%;
+        max-width: 100%;
+    }
+    footer {
+        position: relative;
+    }
+
+}
+
+/*phone*/
+@media screen and (max-width: 375px) {
+    nav{
+        display: none;
+    }
+
+    #IndexBody{
+        background-size: cover;
+    }
+
 }
