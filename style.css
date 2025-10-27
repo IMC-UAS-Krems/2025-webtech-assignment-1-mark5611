@@ -34,7 +34,7 @@ nav > ul {
     color: #D3DAD9;
 }
 
-#IndexMain > div {
+div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,13 +63,13 @@ p {
 
 footer {
     background-color: #37353E;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     justify-content: center;
     align-items: center;
-    display: none;
+    display: flex;
 }
 
 #footerContent {
@@ -137,9 +137,9 @@ html, body {
 }
 
 #CvMainDiv{
-    display: block;
-    max-width: 50%;
-    margin-top: 5%;
+    display: flex;
+    max-width: 200vw;
+    margin-top: 10%;
 }
 
 /*tablet*/
@@ -148,8 +148,15 @@ html, body {
         max-height: 50%;
         max-width: 100%;
     }
-    footer {
-        position: relative;
+
+    #CV{
+        width: 100px;
+        height: 50px;
+    }
+    
+    #CvMainDiv{
+        margin-top: 75px;
+        margin-bottom: 30px;
     }
 
 }
@@ -162,6 +169,11 @@ html, body {
 
     #IndexBody{
         background-size: cover;
+    }
+
+    #CV{
+        width: 5px;
+        height: 2px;
     }
 
 }
