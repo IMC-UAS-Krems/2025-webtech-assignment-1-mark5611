@@ -55,10 +55,9 @@ p {
 }
 
 #Body {
-    background-image: url("images/bg.jpg");
+    background-image: url("../images/bg.jpg");
     background-repeat: no-repeat; /* https://www.w3schools.com/cssref/pr_background-repeat.php */
-    background-size: 1920px, 1080px;
-    background-position-y: 0;
+    background-size: 2000px 2000px;
 }
 
 footer {
@@ -140,7 +139,47 @@ html, body {
     display: flex;
     max-width: 200vw;
     margin-top: 10%;
+    margin-bottom: 5%;
 }
+
+.textField{
+    height: 1.2em;
+    resize: none;
+    width: 18em;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 0.5%;
+
+}
+
+.contactButton{
+    border-radius: 10px;
+    width: 5vw;
+    height: 2vw;
+    background-color: #465C88;
+    color: white;
+    font-size: 1vw;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.contactButton:hover{
+    background-color: #526ca1;
+    box-shadow: 2px 2px 4px #3a3a3a;
+    border: 1px solid black;
+}
+.contactButton:active{
+    background-color: #324060;
+}
+
+.bike{
+    width: 35vw;
+}
+
+#gallery{
+    margin-bottom: 5vw;
+}
+
 
 /*tablet*/
 @media screen and (max-width: 810px) {
@@ -149,31 +188,19 @@ html, body {
         max-width: 100%;
     }
 
+
+
+}
+
+/*shrank desktop*/
+@media screen and (max-width: 900px) {
     #CV{
         width: 100px;
         height: 50px;
     }
-    
+
     #CvMainDiv{
-        margin-top: 75px;
-        margin-bottom: 30px;
-    }
-
-}
-
-/*phone*/
-@media screen and (max-width: 375px) {
-    nav{
-        display: none;
-    }
-
-    #IndexBody{
-        background-size: cover;
-    }
-
-    #CV{
-        width: 5px;
-        height: 2px;
+        margin: 75px 10px 30px;
     }
 
 }
